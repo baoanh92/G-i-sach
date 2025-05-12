@@ -1,0 +1,14 @@
+# 1. Chuyển tới thư mục gốc của dự án
+cd "/e/NDATN/Book-Recommendation-System-master - Copy/Book-Recommendation-System-master"
+
+# 2. Tạo file .gitignore với here-doc
+cat > .gitignore << 'EOF'
+# Thư mục môi trường ảo
+envDATN/
+# Checkpoints của Jupyter
+.ipynb_checkpoints/
+# File model nặng
+ncf_model.h5
+# Thư mục dữ liệu thô (nếu không muốn public)
+Datasets/
+EOF
